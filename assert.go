@@ -12,6 +12,6 @@ func Assert(c bool, msg string) {
 
 func Assertf(c bool, format string, args ...interface{}) {
 	if !c {
-		panic(fmt.Sprintf(format, args))
+		panic(fmt.Sprintf(format, args...))
 	}
 }
